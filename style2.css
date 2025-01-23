@@ -1,6 +1,7 @@
 body {
   max-width: 1360px;
   margin: 0 auto;
+  background-color: #f8f3ed;
 }
 .Home {
   color: #fea301;
@@ -37,6 +38,9 @@ body {
   gap: 30px;
   font-size: 30px;
 }
+.main-color {
+  background-color: #f8f3e9;
+}
 .Empowering {
   display: flex;
   justify-content: space-between;
@@ -67,7 +71,7 @@ body {
 }
 .background-img {
   /* background-color: #FEA301; */
-  background-image: url(assets/bg.png);
+  background-image: url(./assets/bg.png);
 }
 .Standard {
   text-align: center;
@@ -80,13 +84,13 @@ body {
   text-align: center;
 }
 .div-2 {
-  background-color: #fff4dc;
+  background-color: #f7e8c9;
   padding: 20px;
   border-radius: 20px;
   text-align: center;
 }
 .div-3 {
-  background-color: #f2e8ff;
+  background-color: #e7d8fa;
   padding: 20px;
   border-radius: 20px;
   text-align: center;
@@ -149,16 +153,29 @@ body {
   padding: 8px;
   border-radius: 20px;
 }
-.Display-grid div {
+.Display-grid .grid-card {
   width: 100%;
   height: 100%;
 }
 .Display-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 10px;
   /* max-width: 1200px;
   height: 50vh; */
+}
+.bg-color2,
+.bg-color3,
+.bg-color4,
+.bg-color5 {
+  background: #ffffff;
+  padding: 20px;
+  margin-left: 50px;
+  border-radius: 10px;
+}
+.grid-card {
+  grid-row-start: 1;
+  grid-row-end: 3;
 }
 
 .Group {
@@ -170,7 +187,7 @@ body {
   text-align: center;
   margin: 50px;
   background-color: #f7f5f3;
-  background-image: url(assets/bg.png);
+  background-image: url(./assets/bg.png);
   /* display: grid; */
 }
 .main-color {
@@ -179,12 +196,19 @@ body {
 }
 
 .button-nav {
-  text-align: center;
+  display: flex;
+  justify-content: center;
   color: rgb(255, 255, 255);
   background-color: #000000;
   padding: 10px 20px;
   border-radius: 8px;
 }
+.midil-button {
+  display: flex;
+  justify-content: center;
+  margin: 40px 40px;
+}
+
 .footer {
   background-color: #01acfd;
   padding: 70px;
@@ -205,6 +229,14 @@ body {
 }
 .menu-2 {
   display: none;
+}
+.marquee {
+  box-shadow: 10 10px 10px rgba(198, 241, 4, 0.1);
+  border: 1px solid rgba(2, 2, 2, 2);
+  background-color: #f7e8c9;
+  padding: 10px;
+  color: #3cd8e8;
+  font-size: x-large;
 }
 
 /* media screen */
@@ -238,5 +270,8 @@ body {
   }
   .menu-2 {
     display: block;
+  }
+  .Group {
+    display: none;
   }
 }
